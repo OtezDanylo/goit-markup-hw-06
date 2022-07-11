@@ -37,7 +37,8 @@
       </nav>
       <ul class="header-list-contacts list">
         <li class="contacts-list-item">
-          <a href="mailto:info@devstudio.comlink" class="contacts"><svg class="header-media-icon icon" width="16" height="12">
+          <a href="mailto:info@devstudio.comlink" class="contacts"><svg class="header-media-icon icon" width="16"
+              height="12">
               <use href="./images/symbol-defs-contacts.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
@@ -60,13 +61,48 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <div class="div-cross-button">
-            <button type="button" class="cross-button" data-modal-close>
-              <svg class="cross-svg">
-              <use href="./images/modal-window.svg#icon-cross"></use>
-            </svg>
-          </button>
+              <button type="button" class="cross-button" data-modal-close>
+                <svg class="cross-svg">
+                  <use href="./images/modal-window.svg#icon-cross"></use>
+                </svg>
+              </button>
+            </div>
+             <h2 class="modal-txt">Оставьте свои данные, мы вам перезвоним</h2>
+            <form name="modal">
+              <div class="modal-contacts ">
+              <label for="modal" class="modal-lable">
+                <p class="modal-p">Имя</p>
+                <span class="icon-span"> <svg class="modal-svg">
+                  <use href="./images/symbol-defs-modal.svg#icon-man"></use>
+                </svg></span>
+              <input type="text" name="modal" class="modal-input">
+              </label>
+              <label for="modal" class="modal-lable">
+                <p class="modal-p">Телефон</p>
+                <span class="icon-span"> <svg class="modal-svg">
+                    <use href="./images/symbol-defs-modal.svg#icon-phone"></use>
+                  </svg></span>
+                <input type="tel" name="modal" class="modal-input">
+              </label>
+              <label for="modal" class="modal-lable">
+                <p class="modal-p">Почта</p>
+                <span class="icon-span"> <svg class="modal-svg">
+                    <use href="./images/symbol-defs-modal.svg#icon-email"></use>
+                  </svg></span>
+                <input type="email" name="modal" class="modal-input">
+              </label>
+              <textarea name="mdodal" id="comment"  placeholder="Введите текст" class="modal-comment" ></textarea>
+                              <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox " name="checkbox"> 
+                                <span> <svg class="empty-icon">
+                                  <use href="./images/symbol-defs-modal.svg#icon-empty-square"></use>
+                                </svg></span>
+                                Соглашаюсь с рассылкой и принимаю <a href="" class="terms">Условия договора</a> 
+                              </label>
+                          <button type="submit" class="modal-button">Отправить</button>
+            </div>
+            </form>
           </div>
-           </div>
         </div>
       </div>
     </section>
@@ -77,8 +113,9 @@
         <ul class="why-container list">
           <li class="why-information">
             <div class="why-icons"><svg width="70" height="70">
-              <use href="./images/symbol-defs-why.svg#icon-antenna"> </use>
-            </svg></div><h3 class="uppercase uppercase-why">Внимание к деталям</h3>
+                <use href="./images/symbol-defs-why.svg#icon-antenna"> </use>
+              </svg></div>
+            <h3 class="uppercase uppercase-why">Внимание к деталям</h3>
             <p class="why">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
@@ -86,8 +123,9 @@
           </li>
           <li class="why-information">
             <div class="why-icons"><svg width="70" height="70">
-              <use href="./images/symbol-defs-why.svg#icon-clock"> </use>
-            </svg></div><h3 class="uppercase uppercase-why">Пунктуальность</h3>
+                <use href="./images/symbol-defs-why.svg#icon-clock"> </use>
+              </svg></div>
+            <h3 class="uppercase uppercase-why">Пунктуальность</h3>
             <p class="why">
               Задача организации, в особенности же рамки и место обучения
               кадров влечет за собой.
@@ -95,8 +133,9 @@
           </li>
           <li class="why-information">
             <div class="why-icons"><svg width="70" height="70">
-              <use href="./images/symbol-defs-why.svg#icon-diagram"> </use>
-            </svg></div><h3 class="uppercase uppercase-why">Планирование</h3>
+                <use href="./images/symbol-defs-why.svg#icon-diagram"> </use>
+              </svg></div>
+            <h3 class="uppercase uppercase-why">Планирование</h3>
             <p class="why">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
@@ -104,8 +143,9 @@
           </li>
           <li class="why-information">
             <div class="why-icons"><svg width="70" height="70">
-              <use href="./images/symbol-defs-why.svg#icon-astronaut"> </use>
-            </svg></div><h3 class="uppercase uppercase-why">Современные технологии</h3>
+                <use href="./images/symbol-defs-why.svg#icon-astronaut"> </use>
+              </svg></div>
+            <h3 class="uppercase uppercase-why">Современные технологии</h3>
             <p class="why">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -121,7 +161,7 @@
         <h2 class="doing">Чем мы занимаемся</h2>
         <ul class="doing-container list">
           <li class="doing-list-items">
-             <img src="./images/pc.jpg" alt="Компьютер" width="370" />
+            <img src="./images/pc.jpg" alt="Компьютер" width="370" />
             <p class="doing-txt">десктопные приложения</p>
           </li>
           <li class="doing-list-items">
@@ -130,7 +170,7 @@
           </li>
           <li class="doing-list-items">
             <img src="./images/tablet.jpg" alt="Планшет" width="370" />
-          <p class="doing-txt">Дизайнерские решения</p>
+            <p class="doing-txt">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -276,7 +316,7 @@
             </div>
           </li>
         </ul>
-       </ul>
+        </ul>
       </div>
     </section>
     <section class="clients section">
@@ -302,41 +342,57 @@
                 <use href="./images/symbol-defs-comp.svg#icon-square"></use>
               </svg></a></li>
       </div>
-        </section>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
-            <div><a href="./index.html" class="Web-footer link">Web<span class="studio link">Studio</span></a>
-      <address class="address">
-        <ul class=" list">
-          <li class="footer-list-item list">
-            <a href="https://goo.gl/maps/72ySWtxUDbigpaGH8" target="_blank" rel="noopener noreferrer" class="maps link">
-              г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li class="footer-list-item list">
-            <a href="mailto:info@example.com" class="contacts-footer link">info@example.com</a>
-          </li>
-          <li class="footer-list-item list">
-            <a href="tel:+380991111111" class="contacts-footer link">+38 099 111 11 11</a>
-          </li>
+      <div><a href="./index.html" class="Web-footer link">Web<span class="studio link">Studio</span></a>
+        <address class="address">
+          <ul class=" list">
+            <li class="footer-list-item list">
+              <a href="https://goo.gl/maps/72ySWtxUDbigpaGH8" target="_blank" rel="noopener noreferrer"
+                class="maps link">
+                г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="footer-list-item list">
+              <a href="mailto:info@example.com" class="contacts-footer link">info@example.com</a>
+            </li>
+            <li class="footer-list-item list">
+              <a href="tel:+380991111111" class="contacts-footer link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="div-footer">
+        <p class="p-footer">присоединяйтесь</p>
+        <ul class="footer-list-icon list">
+          <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20"
+                height="20">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg></a></li>
+          <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20"
+                height="20">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20"
+                height="20">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg></a></li>
+          <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20"
+                height="20">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a></li>
         </ul>
-      </address> </div>
-    <div class="div-footer">
-      <p class="p-footer">присоединяйтесь</p><ul class="footer-list-icon list">
-      <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20" height="20">
-            <use href="./images/symbol-defs.svg#icon-instagram"></use>
-          </svg></a></li>
-      <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20" height="20">
-        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-      </svg></a></li>
-      <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20" height="20">
-        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-      </svg></a></li>
-      <li class="footer-icon-item"><a href="/" class="footer-icon link"><svg class="social-media-icon" width="20" height="20">
-            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-          </svg></a></li>
-    </ul>
-    </div>
+      </div>
+      <div class="email">
+        <p class="email-txt">Подпишитесь на рассылку</p>
+        <form class="mail-form">
+          <input type="email" id="mail" placeholder="E-mail" />
+          <button type="submit" class="subscribe">  Подписаться <svg class="svg">
+            <use href="./images/symbol-defs-modal.svg#icon-plane"></use>
+          </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
   <script src="./modal.js"></script>
