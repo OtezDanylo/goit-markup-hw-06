@@ -60,16 +60,13 @@
         <button type="button" class="head-button" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <div class="div-cross-button">
               <button type="button" class="cross-button" data-modal-close>
                 <svg class="cross-svg">
                   <use href="./images/modal-window.svg#icon-cross"></use>
                 </svg>
               </button>
-            </div>
-             <h2 class="modal-txt">Оставьте свои данные, мы вам перезвоним</h2>
-            <form name="modal">
-              <div class="modal-contacts ">
+             <p class="modal-txt">Оставьте свои данные, мы вам перезвоним</p>
+            <form name="modal"class="modal-contacts " >
               <label for="modal" class="modal-lable">
                 <p class="modal-p">Имя</p>
                 <span class="icon-span"> <svg class="modal-svg">
@@ -94,14 +91,13 @@
               <textarea name="mdodal" id="comment"  placeholder="Введите текст" class="modal-comment" ></textarea>
                               <label class="checkbox-label">
                                 <input type="checkbox" class="checkbox " name="checkbox"> 
-                                <span> <svg class="empty-icon">
-                                  <use href="./images/symbol-defs-modal.svg#icon-empty-square"></use>
+                                <span class="modal-icon"> <svg class="agree-icon">
+                                  <use href="./images/symbol-defs-modal.svg#icon-agree"></use>
                                 </svg></span>
                                 Соглашаюсь с рассылкой и принимаю <a href="" class="terms">Условия договора</a> 
                               </label>
                           <button type="submit" class="modal-button">Отправить</button>
-            </div>
-            </form>
+                     </form>
           </div>
         </div>
       </div>
@@ -387,7 +383,7 @@
       <div class="email">
         <p class="email-txt">Подпишитесь на рассылку</p>
         <form class="mail-form">
-          <input type="email" id="mail" placeholder="E-mail" />
+          <input type="email" id="mail" placeholder="E-mail" class="footer-input"/>
           <button type="submit" class="subscribe">  Подписаться <svg class="svg">
             <use href="./images/symbol-defs-modal.svg#icon-plane"></use>
           </svg></button>
